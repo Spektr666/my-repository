@@ -1,130 +1,391 @@
-.logo_t {
-position: absolute;
-Width: 17px;
-Height: 32px;
-Top: 61px;
-Left: 201px;
-
-font-family: Mulish;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 33px;
-
-color: #FFFFFF;
-
-mix-blend-mode: normal;
-
-}
-
-.circle {
-    position: absolute;
-    left: 191px;
-top: 56px;
-    width: 41px;
-    height: 41px;
-        border-radius: 20.5px;
-    background: #458FF6;
-  }
-
 
 .logo_trafalgar{
-    position: absolute;
-    Width: 107px;
-    Height: 30px;
-    Top: 62px;
-    Left:244px;
-    
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    
-    color: #233348;
-    
-    mix-blend-mode: normal;
-}
-
-
-   
-.header_nav_style{
-    position: absolute;
-        height: 23px;
-    left: 863px;
-    top: 70px;
-    right: 192px;
-    
- }
- .header_nav_text_style{
-   
-
-font-family: Mulish;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 23px;
-
-color: #1F1534;
-padding: 40px;
-opacity: 0.5;
- }
-
- .h1_text_style{
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 32px;
-        color: #7D7987;
-       mix-blend-mode: normal;
- }
-
-.border_content{
-    Width: 350px;
-    Height: 354px;
-    border-radius: 20px;
-    background: #FFFFFF;
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-    border-color: transparent;
-    position: absolute;
-}
-.border_content2{
-    border-style: solid;
-    width: 200px;
-    height: 56px;
+    width: 0.20%;
+    height: 0.20%;
+    color: white;
+    width: 41px;
+     height: 41px;
+    color: white;
     background: #458FF6;
-    border-radius: 55px;
-    list-style: none;
-    border-color:#458FF6 ;
-    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+.vector-style-one{
+        transform: rotate(21.46deg);
+        position: absolute; 
+        z-index: 1;
+        width: 940px;
+        height: 670px;    
+        margin-top: 135px;
+        margin-left:-135px;
+        background-color: linear-gradient(175.68deg, #F3F7FF -10.48%, #DEEEFE 92.66%);
+}
+.main-position{
+    position: relative;
+    z-index: 2;
 }
 
-.h2_text_style{
-    font-family: Mulish;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 56px;
-color: #000000;
-mix-blend-mode: normal;
-padding-left: 39px;
-padding-right: 39px;
-padding-top: 20px;
+.psevdo-chertochka{
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #000000;
+    margin: 25px 0px 25px 0px;
 }
- .h3_text_style{
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 28px;
-    color:  #7D7987;
-    mix-blend-mode: normal;
-    padding-left: 39px;
-    padding-right: 39px;
-    padding-bottom: 39px;
- }
- .img_style{
-    padding-left: 37px;
-    padding-top: 54px;
- }
+.conteiner{
+    width: 1400px;
+    position: center;
+    margin: 0 auto;
+    }
+
+    .conteiner_header{
+    display:flex ;
+    flex-direction: row;
+   align-content: space-between;
+   justify-content: space-between;
+   margin: 5%;
+}
+    .header_logo {
+        display:flex;
+        color: #233348;
+        font-size: 2em;
+        font-weight: bold;
+        flex-direction: row;
+        align-items: center;
+               }
+   
+    .header_nav {
+   display:flex;
+   flex-direction: row;
+   text-decoration: none;
+   align-content: space-between;
+   justify-content: space-between;
+   align-content: flex-end;
+   align-items: center;
+   flex-wrap: wrap;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 1.5em;
+   color: #1F1534;
+   opacity: 0.5;
+   width: 50%;
+           }
+           .link_text_decoration{
+               text-decoration: none;
+               color: #1F1534;
+           }
+           .link_text_decoration:hover{
+               color: black;
+               font-weight: bold;
+           }
+.flex_header_text{
+    display: flex;
+    margin: 5%;
+
+}
+.box_text{
+    display: flex;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+    
+}
+    .box_text_style_bold{
+        font-size: 4em;
+        font-weight: bold;
+        color: #000000;
+        margin-top: 20%;
+
+    }
+    .box_text_style_small{
+        font-size: 1.75em;
+        line-height: 1.5em;
+        color:#7D7987;
+        margin-top: 5%;
+
+    }
+    .bottom_consult_today{
+        font-size: 1.5em;
+        color: #FFFFFF;
+        width: 41.1%;
+        height: 8.5%;
+        border-radius: 21%;
+        background-color: #458FF6;
+        text-align: center;
+        margin-top: 10%;
+
+        
+    }
+.box_img{
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+}
+
+.conteiner_Our_services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+    .text_style_main_bold{
+        font-size: 3em;
+        color:  #000000;
+        font-weight: bold;
+    }
+    .text_style_main_small{
+        font-size: 1.5em;
+        line-height: 2em;
+        color: #7D7987;
+        width: 70%;
+        text-align: center;
+    }
+    
+.conteiner_block_services{
+    display: flex;
+    width: 85%;
+    margin-left: 7.5%;
+    
+}
+.conteiner_block_services_two{
+    display: flex;
+}
+    .conteiner_block_services_text_style_bold{
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 3em;
+        color: #000000;
+    }
+    .conteiner_block_services_text_style_small{
+        font-size: 1.4em;
+        line-height: 2.5em;
+        color: #7D7987;
+    }
+    .conteiner_block_services_section_border{
+        background: #FFFFFF;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+        border-radius: 20px;
+        margin: 3em;
+        padding: 4em;
+        width: 100%
+
+    }
+
+.border_button_style{
+    display: flex;
+    border: 0.11em solid #458FF6;
+    box-sizing: border-box;
+    Width: 200px;
+    Height: 56px;
+    border-radius: 55px;
+    margin-left: 43%;
+    justify-content: center;
+}
+    .button_text_style{
+        
+        font-weight: bold;
+        font-size: 1.5em;
+        line-height: 3em;
+        color: #458FF6;
+        text-decoration: none;
+    }
+
+.conteiner_Leading_healthcare{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+
+}   
+    .conteiner_Leading_healthcare_text_bold_style{
+        font-weight: bold;
+        font-size: 3em;
+        line-height: 1.5em;
+        color: #000000
+    }
+    .conteiner_Leading_healthcare_text_small_style{
+        font-size: 18px;
+        line-height: 30px;
+        color: #7D7987;
+    }
+    .border_button_style_margin_left_none{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    .margin_box_item{
+        margin: 5%;
+    }
+.conteiner_download_apps{
+    display: flex;
+    margin: 5%;
+}
+
+.conteiner_comment{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+    .conteiner_comment_border_style{
+        width: 75%;
+        height: 30%;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+        border-radius: 24px;
+    }
+    .conteiner_comment_tittle_style{
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        margin: 5%;
+        color: #FFFFFF;
+    }
+    .conteiner_name_style{
+        font-weight: bold;
+        font-size: 1.8em;
+        color: #FFFFFF;
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+    .conteiner_work_position_style{
+        font-size: 1.5em;
+        color: rgba(255, 255, 255, 0.85);
+        margin-top: 10%;
+        margin-left: 10%;
+        
+    }
+    .conteiner_blockquote_style{
+        font-size: 1.55em;
+        line-height: 2em;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 50%;
+
+    }
+    .conteiner_section_center{
+        display: flex;
+        justify-content: center;
+    }
+    .conteiner_display_flex{
+        display: flex;
+    }
+
+.Check-article--text-style{
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 3em;
+    color: black;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.conteiner-asside{
+    display: flex;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+    .conteiner-asside--title-style{
+        font-weight: bold;
+        font-size: 1.75em;
+        line-height: 1.5em;
+        color: #000000;
+        margin: 7%;
+    }
+    .conteiner-asside--text-style{
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #7D7987;
+        font-weight: 25%;
+        margin: 7%;
+    }
+    .read-more--style{
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #4089ED;
+        margin: 7%;
+    }
+    .conteiner-asside--border-style{
+        background: #FFFFFF;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+        border-radius: 7%;
+        margin-right: 3%;
+    }
+
+.conteiner-footer--border-style{
+    display: flex;
+    padding: 5%;
+    margin-top: 7%;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+
+}
+    .logo-t-trafalgar{
+            width: 0.20%;
+            height: 0.20%;
+            color: #5B9BF3;
+            width: 41px;
+             height: 41px;
+            color: #5B9BF3;
+            background: white;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 2em;
+            padding-bottom: 5px;
+    }
+    .conteiner-footer--tittle-text-style{
+        font-weight: bold;
+        font-size: 1.8em;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .conteiner-footer--small-text-style{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #FFFFFF;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-decoration: none;
+        opacity: 0.5;
+    }
+     .flex-two{
+         display: flex; 
+         justify-content: space-around;
+         width: 250%;
+     }
+     .flex-one{
+         display: flex;
+         flex-direction: column;
+     }
+     .conteiner-footer--trafalgar--padding-top{
+         padding-top: 20px;
+     }
+     
+
+
+     .arrow-bot{
+         padding-left: 5%;
+     }
+     .arrow-right{
+        padding-left: 5%;
+     }
+     .arrow_nav{
+         display: flex;
+         text-decoration: none;
+        display: flex;
+        color: #5B9BF3;
+        text-decoration: none;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 40px;
+        width: 20%;
+        margin-left: 40%;
+    }
+     .a-text-style{
+        text-decoration: none;
+        color: #5B9BF3;
+     }
+     .a-text-style:hover{
+         font-weight: bolder;
+         color: blue;
+     }
