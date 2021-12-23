@@ -107,7 +107,6 @@ function removeChar(str) {
   return x.replace(/\s/g, '')
 */
 
-
 function noSpace(x) {
   let result = ``;
   for (let i = 0; i < x.length; i++) {
@@ -230,3 +229,91 @@ function timeForMilkAndCookies(date) {
 }
 
 //18, 19, 15, 14 не забыть сделать
+
+/* 
+  14 - Validate Password
+  https://javascript.info/regexp-character-classes
+*/
+
+function validPass(password) {
+  // More than 3 characters but less than 20
+  if (password.length <= 3 || password.length >= 20) {
+    return "INVALID";
+  }
+  /*
+    Must contain only alphanumeric characters
+    \d - only numbers
+    a-zA-Z- only letters
+    + - one or more
+  */
+  if (!/^[\da-zA-Z]+$/.test(password)) {
+    return "INVALID";
+  }
+  /*
+    Must contain letters and numbers
+    At least one number AND one letter
+    \d - number
+    a-zA-Z - letter
+    && - AND both should return TRUEs
+  */
+  if (!(/\d/.test(password) && /[a-zA-Z]/.test(password))) {
+    return "INVALID";
+  }
+  return "VALID";
+}
+
+
+/* 
+  15 - formatDuration
+*/
+
+function formatDuration(seconds) {
+  if (!seconds) {
+    return 'now'
+  }
+  const times = {
+    year: 365 * 24 * 60 * 60,
+    day: 24 * 60 * 60,
+    hour: 60 * 60,
+    minute: 60,
+    second: 1
+  }
+  const chunks = Object.keys(times).reduce((acc, period, i, array) => {
+    const val = Math.floor(seconds / times[period]);
+    let name = period;
+    if (val) {
+      if (val > 1) {
+        name += 's';
+      }
+      acc.push(`${val} ${name}`)
+      seconds = seconds % times[period]
+    }
+    return acc;
+  }, [])
+  return chunks.slice(0, -1).join(', ') + (chunks.length > 1 ? ` and ${chunks.slice(-1)}` : chunks[0]);
+}
+
+/* 
+  19 - fizzBuzzCuckooClock
+*/
+function fizzBuzzCuckooClock(time) {
+  // get an hour and minutes
+  let a = time.split(':').map(v => parseInt(v));
+  // hour
+  let m = a[1]
+  // minutes
+  let h = a[0];
+  h = h === 0 ? 12 : h > 12 ? h - 12 : h;
+  // On the hour, instead of "Fizz Buzz", the clock door will open, and the cuckoo bird will come out and "Cuckoo" between one and twelve times depending on the hour.
+  if (m === 0) return ('Cuckoo '.repeat(h)).trim();
+  // On the half hour, instead of "Fizz Buzz", the clock door will open, and the cuckoo will come out and "Cuckoo" just once
+  if (m === 30) return 'Cuckoo';
+  // With minutes that are not evenly divisible by either three or five, at first you had intended to have the clock just say the numbers ala Fizz Buzz
+  if (m % 3 === 0) {
+    if (m % 5 === 0) return 'Fizz Buzz';  
+    return 'Fizz';  
+  }
+  if (m % 5 === 0) return 'Buzz'; 
+  // but then you decided at least for version 1.0 to just have the clock make a quiet, subtle "tick" sound for a little more clock nature and a little less noise.
+  return 'tick';
+}
